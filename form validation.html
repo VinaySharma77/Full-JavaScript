@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Form Validation</title>
+</head>
+<body>
+<form method="post" name="myform" onsubmit="return validateform()">
+	<table border="1" cellspacing="2">
+		<tr>
+			<td align="right">Name</td>
+			<td><input type="text" name="username"></td>
+		</tr>
+		<tr>
+			<td align="right">Password</td>
+			<td><input type="password" name="password"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+<script type="text/javascript">
+function validateform(){
+	var name = document.myform.username.value;
+	var password = document.myform.password.value;
+	
+	if(name==null || name==""){
+		alert("User name can't be blank");
+		return false;
+	}
+	else if(password.length<6){
+		alert("Password must be at least 6 characters long.");
+		return false;
+	}
+}
+</script>
+</body>
+</html>

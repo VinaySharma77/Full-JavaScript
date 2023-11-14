@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Number Object</title>
+</head>
+<body>
+<script type="text/javascript">
+var chkNaN = Number.isNaN(Number.NaN);
+var chkFinite1 = Number.isFinite(Number.Infinity);
+var chkFinite2 = Number.isFinite(10);
+var chkInt1 = Number.isInteger(3.14);
+var chkInt2 = Number.isInteger(45);
+var chkSInt = Number.isSafeInteger(7);
+var pFloat = Number.parseFloat("6.5");
+var iFloat = Number.parseFloat("76");
+
+document.write("Is NaN is not a number : " + chkNaN);
+document.write("<br>Is Infinity is Finite : " + chkFinite1);
+document.write("<br>Is 10 is Finite : " + chkFinite2);
+document.write("<br>Is 3.14 is an Integer : " + chkInt1);
+document.write("<br>Is 45 is an Integer : " + chkInt2);
+document.write("<br>Is 7 is a safe-Integer : " + chkSInt);
+document.write("<br>Converting string 6.5 in floating-point : " + pFloat);
+document.write("<br>Converting string 76 in Integer : " + iFloat);
+</script>
+</body>
+</html>

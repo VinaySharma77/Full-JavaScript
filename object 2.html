@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Object</title>
+<script type="text/javascript">
+function student(firstName, lastName, age){
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age = age;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var s1 = new student("Raghav","Goyal",10);
+var s2 = new student("Leena","Goyal",13);
+
+document.write("Details of student 1 : ");
+document.write("<br>First Name : " + s1.firstName);
+document.write("<br>Last Name : " + s1.lastName);
+document.write("<br>age : " + s1.age);
+
+document.write("<br>Details of student 2 : ");
+document.write("<br>First Name : " + s2.firstName);
+document.write("<br>Last Name : " + s2.lastName);
+document.write("<br>age : " + s2.age);
+</script>
+</body>
+</html>
